@@ -20,6 +20,10 @@ connection_url = URL.create(
 )
 engine = create_engine(connection_url)
 
+BASE_URL  = 'https://api.rawg.io/api'
+PAGES     = 20
+PAGE_SIZE = 40
+
 # ── Extract ──────────────────────────────────────────────────
 def fetch_games(pages=PAGES):
     all_games = []
